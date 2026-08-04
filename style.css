@@ -1,0 +1,393 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header       */
+#header{
+    display: flex;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid red;
+
+}
+#logo{
+    margin-left: 50px;
+}
+
+/* navbar */
+#nav{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 25px;
+    margin-right: 100px;   
+}
+a{
+    text-decoration: none;
+    color: #9aa0af;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s ease-in-out;
+}
+.navbtn:hover{
+    color: white;
+    border-bottom: 2px solid red;
+    transform: scale(1.1);
+}
+
+/* Hero */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    border-bottom: 1.5px solid red;
+  
+}
+span#name{
+    color: red;
+    text-shadow : 0px 0px 20px #2dd4bf;
+    font-size: 45px;
+}
+.hero-text{
+    width: 50%;
+    padding-top: 150px;
+    padding-left: 100px;
+    line-height: 1.5;
+}
+.hero-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px; 
+}
+.hero-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid red;
+    box-shadow: 0 0 20px #2dd4bf;
+}
+.hero-image img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.herobtn{
+    background-color: #E53935 ;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 10px #2dd4bf;
+
+}
+.herobtn:hover{
+    background-color: #2dd4bf;
+    color: black;
+    font-weight: bold;
+    border: 2px solid transparent;
+    box-shadow: 3px 3px 10px red;
+}
+.herobtn:active{
+    background-color: #2dd4bf;
+    border: 2px solid red;
+    color: black;
+    font-weight: bold;
+}
+
+/* About */
+#aboutme-head{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1.5px solid red;
+}
+#aboutme{
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+
+}
+.Aboutme{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 20%;
+    min-height: 230px;
+    height: auto;
+    padding: 1px 20px 20px 20px;
+    line-height: 1.5;    
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px #2dd4bf;
+    border-radius: 15px;
+}
+.Aboutme:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px red;
+}
+
+/* Skills */
+#myskills-head{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-bottom: 1.5px solid red;
+}
+#skills-heading{
+    color: white;
+}
+#myskills{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+gap: 20px;
+
+
+}
+.myskills{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    /* width: 20%; */
+    /* min-height: 280px;
+    height: auto; */
+    padding: 1px 20px 20px 20px;
+    line-height: 1.5;    
+    border: 1px solid red;
+    border-radius: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    box-shadow:0px 0px 10px #2dd4bf;
+}
+.myskills:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    box-shadow:0px 0px 20px red;
+
+}
+.skill-bar{
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bar{
+    width: 0%;
+    height: 10px;
+    background-color: #2dd4bf;
+    border-radius: 10px;
+}
+#HTML .bar{
+    width: 95%;
+}
+#CSS .bar{
+    width: 85%;
+}
+#Cpp .bar{
+    width: 90%;
+}
+#Msoffice .bar {
+    width: 80%;
+}
+#canva .bar{
+    width: 90%;
+}
+
+/* project */
+#myprojects-head{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1.5px solid red;
+}
+#myprojects{
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+
+}
+.myprojects{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 20%;
+    min-height: 230px;
+    height: auto;
+    padding: 1px 20px 20px 20px;
+    line-height: 1.5;    
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px #2dd4bf;
+    border-radius: 15px;
+}
+.myprojects  img{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    object-fit: center;
+    border-radius: 15px;
+}
+.myprojects:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px red;
+}
+    
+/* Services */
+#myservices-head{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1.5px solid red;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+}
+.viewproject{
+    color: #2dd4bf;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#myservices{
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+
+}
+.myservices{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 20%;
+    min-height: 230px;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    line-height: 1.5;    
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px #2dd4bf;
+    border-radius: 15px;
+}
+#myservices :hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px red;
+}
+
+/* contact */
+#mycontact-head{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1.5px solid red;
+}
+#name-input, #email-input, #subject-input, #message-input{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+
+}
+#mycontact{
+    padding-left: 50px;
+}
+.mycontact:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px red;
+}
+#message-input{
+    height: 100px;
+}
+#row{
+    display: flex;
+    gap: 20px;
+}
+#name-input, #email-input{
+    width: 100%;
+}
+#submit-btn{
+    background-color: #E53935 ;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 10px #2dd4bf;
+}
+#submit-btn:hover{
+    background-color: #2dd4bf;
+    color: black;
+    font-weight: bold;
+    border: 2px solid transparent;
+    box-shadow: 3px 3px 20px red;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    border-top:1px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    padding-top: 30px;
+    height: 40px;
+    border-bottom: 2px solid red;
+
+}
+#copyright{
+    margin-left: 80px;
+}
+#footerlinks{
+    display: flex;
+    gap: 40px;
+    margin-right: 80px;
+    margin-top: -15px;
+    
+}
+#footerlinks img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+#github:hover{
+    color: white;
+    transform: scale(1.1) ;
+    transition: all 0.3s ease-in-out;
+
+}   
+#linkedin:hover{
+    color: white;
+    transform: scale(1.1) ;
+    transition: all 0.3s ease-in-out;
+
+}   
+#instagram:hover{
+    color: white;
+    transform: scale(1.1) ;
+    transition: all 0.3s ease-in-out;
+}
